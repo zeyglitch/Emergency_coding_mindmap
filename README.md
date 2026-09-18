@@ -1,30 +1,78 @@
-# Emergency Coding Navigator
+# Carte mentale interactive du codage RPU (urgences)
 
-Ce projet est un outil de visualisation interactive sous forme de carte mentale, conçu en Python avec PySide6 et PyVis. Son but est de faciliter l'exploration et la navigation dans la hiérarchie complexe du codage médical des urgences (les fameux RPU). 
+Outil de visualisation interactive sous forme de carte mentale pour explorer la hiérarchie du codage médical des urgences (Résumé de Passage aux Urgences, RPU). Développé en Python avec PySide6 et PyVis.
 
-L'outil structure les données de manière logique, en partant des grandes catégories (les organes) jusqu'aux codes médicaux spécifiques.
+## Contexte et contribution
+
+Ce projet a été **co-développé** dans le cadre d'un stage de 3ème année d'école d'ingénieur (ISIS Castres, partenaire INSA) au Département d'Information Médicale d'un Centre Hospitalier public, entre avril et juin 2026.
+
+**Contribution de Mathieu Jonniaux** (auteur de ce dépôt) :
+- Conception et implémentation de la visualisation en carte mentale interactive (PySide6 + PyVis)
+- Structure de navigation, filtres et panneau de détails
+- Corrections mineures sur la structuration des données
+
+**Contribution de la tutrice de stage** :
+- Constitution et importation du jeu de données RPU (dossier `data/`)
+- Liaison sémantique entre les organes, catégories intermédiaires et codes finaux
+- Validation métier
+
+Publication de ce dépôt réalisée **avec l'accord explicite de la tutrice de stage**.
 
 ## Fonctionnalités
-- **Visualisation interactive** : Un graphe que l'on peut explorer librement.
-- **Recherche et filtres** : Vous pouvez filtrer le graphe par organe ou utiliser la barre de recherche avec autocomplétion pour trouver un terme précis.
-- **Panneau de détails** : En cliquant sur un nœud, vous affichez ses informations complètes (définition, intermédiaire, code RPU final).
-- **Performances** : Le rendu est optimisé pour gérer de grands volumes de données.
 
-## Documentation
-- [Guide Utilisateur](docs/user_guide.md) : Pour savoir comment installer et utiliser l'application au quotidien.
-- [Guide Développeur](docs/developer_guide.md) : Pour comprendre l'architecture du code et savoir comment le modifier ou l'améliorer.
+- **Visualisation interactive** : graphe explorable, organisé du général (grandes catégories/organes) au spécifique (codes RPU).
+- **Filtres** : par organe / catégorie.
+- **Recherche avec autocomplétion** pour trouver un terme précis.
+- **Panneau de détails** : au clic sur un nœud, affichage de la définition, du terme intermédiaire et du code RPU final.
+- **Optimisations de rendu** pour gérer de grands volumes de données.
+
+## Stack technique
+
+- Python 3.9+
+- PySide6 (interface Qt)
+- PyVis (rendu graphe interactif dans une WebView intégrée)
+- Pandas (chargement et traitement des données)
+
+## Confidentialité
+
+Les fichiers du dossier `data/` sont **génériques** et ne contiennent aucune information nominative de patient. Ils reposent sur des nomenclatures médicales standardisées (RPU) et une organisation hiérarchique par organe/catégorie qui n'est pas spécifique à un établissement.
+
+## Structure
+
+```
+├── main.py               # Point d'entrée
+├── test_mindmap.py       # Tests
+├── data/                 # Nomenclature RPU structurée
+├── ui/                   # Widgets et interface PySide6
+├── utils/                # Fonctions utilitaires
+├── visualization/        # Rendu PyVis
+├── docs/
+│   ├── user_guide.md
+│   └── developer_guide.md
+├── requirements.txt
+└── .gitignore
+```
 
 ## Installation
-Assurez-vous d'avoir Python 3 installé sur votre machine. Il est fortement recommandé d'utiliser un environnement virtuel (par exemple `.venv`) pour installer les dépendances.
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate  # Sur Windows, utilisez : .venv\Scripts\activate
+source .venv/bin/activate     # macOS/Linux
+# ou : .venv\Scripts\activate  # Windows
 pip install -r requirements.txt
 ```
 
-## Lancement de l'application
-Pour démarrer l'outil, il suffit de lancer le script principal :
+## Lancement
+
 ```bash
 python main.py
 ```
+
+## Documentation
+
+- **[Guide utilisateur](docs/user_guide.md)** — installation et utilisation.
+- **[Guide développeur](docs/developer_guide.md)** — architecture, extension.
+
+## Licence
+
+MIT — voir [LICENSE](LICENSE).
