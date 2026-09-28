@@ -37,6 +37,8 @@ Publication de ce dépôt réalisée **avec l'accord explicite de la tutrice de 
 
 Les fichiers du dossier `data/` sont **génériques** et ne contiennent aucune information nominative de patient. Ils reposent sur des nomenclatures médicales standardisées (RPU) et une organisation hiérarchique par organe/catégorie qui n'est pas spécifique à un établissement.
 
+Publication réalisée avec l'accord du Centre Hospitalier de Cahors.
+
 ## Structure
 
 ```
