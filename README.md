@@ -4,7 +4,7 @@ Outil de visualisation interactive sous forme de carte mentale pour explorer la 
 
 ## Contexte et contribution
 
-Ce projet a été **co-développé** dans le cadre d'un stage de 3ème année d'école d'ingénieur (ISIS Castres, partenaire INSA) au Département d'Information Médicale d'un Centre Hospitalier public, entre avril et juin 2026.
+Ce projet a été **co-développé** dans le cadre d'un stage de 3ème année d'école d'ingénieur (ISIS Castres, partenaire INSA) au Département d'Information Médicale du Centre Hospitalier de Cahors, entre avril et juin 2026. Le concept général de l'applicatif a été défini par le DIM du Centre Hospitalier de Cahors ; le code présenté ici en est la réalisation technique, publiée avec leur accord.
 
 **Contribution de Mathieu Jonniaux** (auteur de ce dépôt) :
 - Conception et implémentation de la visualisation en carte mentale interactive (PySide6 + PyVis)
