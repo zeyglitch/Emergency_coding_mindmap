@@ -4,7 +4,7 @@ Outil de visualisation interactive sous forme de carte mentale pour explorer la 
 
 ## Contexte et contribution
 
-Ce projet a été **co-développé** dans le cadre d'un stage de 3ème année d'école d'ingénieur (ISIS Castres, partenaire INSA) au Département d'Information Médicale du Centre Hospitalier de Cahors, entre avril et juin 2026. Le concept général de l'applicatif a été défini par le DIM du Centre Hospitalier de Cahors ; le code présenté ici en est la réalisation technique, publiée avec leur accord.
+Ce projet a été **co-développé** dans le cadre d'un stage de 3ème année d'école d'ingénieur (ISIS Castres, partenaire INSA) au Département d'Information Médicale du Centre Hospitalier de Cahors, entre avril et juin 2026. Le concept général de l'applicatif a été défini par le DIM du Centre Hospitalier de Cahors ; le code présenté ici en est la réalisation technique, publiée avec l'accord du DIM.
 
 **Contribution de Mathieu Jonniaux** (auteur de ce dépôt) :
 - Conception et implémentation de la visualisation en carte mentale interactive (PySide6 + PyVis)
@@ -37,7 +37,7 @@ Publication de ce dépôt réalisée **avec l'accord explicite de la tutrice de 
 
 Les fichiers du dossier `data/` sont **génériques** et ne contiennent aucune information nominative de patient. Ils reposent sur des nomenclatures médicales standardisées (RPU) et une organisation hiérarchique par organe/catégorie qui n'est pas spécifique à un établissement.
 
-Publication réalisée avec l'accord du Centre Hospitalier de Cahors.
+Publication réalisée avec l'accord du DIM du Centre Hospitalier de Cahors ; validation de la direction en cours.
 
 ## Structure
 
